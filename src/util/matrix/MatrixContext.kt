@@ -10,18 +10,18 @@ class MatrixContext {
     }
 
     fun turnDown() {
-        this.state.turnDown()
+        this.state.turnDown(this)
     }
 
     fun turnUp() {
-        this.state.turnUp()
+        this.state.turnUp(this)
     }
 
     fun turnLeft() {
-        this.state.turnLeft()
+        this.state.turnLeft(this)
     }
 
     fun turnRight() {
-        this.state.turnRight()
+        this.state.turnRight(this)
     }
 }
