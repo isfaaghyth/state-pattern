@@ -1,24 +1,27 @@
 package state.matrix
 
+import util.MessageUtil
 import util.matrix.MatrixContext
 import util.matrix.MatrixState
 
 class SevenState: MatrixState {
+    override fun toString(): String = "7"
+
     override fun turnDown(context: MatrixContext) {
-        println("{{ denied }}")
+        MessageUtil.denied()
     }
 
     override fun turnUp(context: MatrixContext) {
         context.setState(FourState())
-        println("state => 4")
+        println(MessageUtil.printMatrixState(FourState().toString()))
     }
 
     override fun turnLeft(context: MatrixContext) {
-        println("{{ denied }}")
+        MessageUtil.denied()
     }
 
     override fun turnRight(context: MatrixContext) {
         context.setState(EightState())
-        println("state => 8")
+        println(MessageUtil.printMatrixState(EightState().toString()))
     }
 }
