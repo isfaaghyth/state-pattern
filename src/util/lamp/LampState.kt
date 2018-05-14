@@ -1,5 +1,5 @@
-package util
+package util.lamp
 
-interface State {
+interface LampState {
     fun action(lampContext: LampContext)
 }

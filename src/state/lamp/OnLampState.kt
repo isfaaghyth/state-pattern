@@ -1,9 +1,9 @@
 package state.lamp
 
-import util.LampContext
-import util.State
+import util.lamp.LampContext
+import util.lamp.LampState
 
-class OnState: State {
+class OnLampState : LampState {
     override fun action(lampContext: LampContext) {
         lampContext.setState(Brighter())
         println("state: brighter")
