@@ -1,4 +1,5 @@
 import util.lamp.LampContext
+import util.matrix.MatrixContext
 
 fun main(args: Array<String>) {
     /**
@@ -16,14 +17,16 @@ fun main(args: Array<String>) {
     //initialize of matrix 2 dimension
     //use $matrix variable for do something
     var num = 1
-    val matrix = Array(3, {IntArray(3)})
+    val matrix = Array(4, {IntArray(4)})
     for(i in 0 until matrix.size) {
-        var rows = IntArray(3)
+        var rows = matrix[i]
         for(j in 0 until rows.size) {
             rows[j] = num++
         }
         matrix[i] = rows
     }
 
-    
+    val context = MatrixContext(matrix)
+    context.turnDown()
+    context.turnDown()
 }
