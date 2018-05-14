@@ -13,16 +13,16 @@ class EightState: MatrixState {
 
     override fun turnUp(context: MatrixContext) {
         context.setState(FiveState())
-        println(MessageUtil.printMatrixState(FiveState().toString()))
+        println(MessageUtil.printState(FiveState().toString()))
     }
 
     override fun turnLeft(context: MatrixContext) {
         context.setState(SevenState())
-        println(MessageUtil.printMatrixState(SevenState().toString()))
+        println(MessageUtil.printState(SevenState().toString()))
     }
 
     override fun turnRight(context: MatrixContext) {
         context.setState(NineState())
-        println(MessageUtil.printMatrixState(NineState().toString()))
+        println(MessageUtil.printState(NineState().toString()))
     }
 }

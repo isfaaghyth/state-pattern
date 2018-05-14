@@ -9,21 +9,21 @@ class FiveState: MatrixState {
 
     override fun turnDown(context: MatrixContext) {
         context.setState(EightState())
-        println(MessageUtil.printMatrixState(EightState().toString()))
+        println(MessageUtil.printState(EightState().toString()))
     }
 
     override fun turnUp(context: MatrixContext) {
         context.setState(TwoState())
-        println(MessageUtil.printMatrixState(TwoState().toString()))
+        println(MessageUtil.printState(TwoState().toString()))
     }
 
     override fun turnLeft(context: MatrixContext) {
         context.setState(FourState())
-        println(MessageUtil.printMatrixState(FourState().toString()))
+        println(MessageUtil.printState(FourState().toString()))
     }
 
     override fun turnRight(context: MatrixContext) {
         context.setState(SixState())
-        println(MessageUtil.printMatrixState(SixState().toString()))
+        println(MessageUtil.printState(SixState().toString()))
     }
 }

@@ -9,7 +9,7 @@ class TwoState: MatrixState {
 
     override fun turnDown(context: MatrixContext) {
         context.setState(FiveState())
-        println(MessageUtil.printMatrixState(FiveState().toString()))
+        println(MessageUtil.printState(FiveState().toString()))
     }
 
     override fun turnUp(context: MatrixContext) {
@@ -18,11 +18,11 @@ class TwoState: MatrixState {
 
     override fun turnLeft(context: MatrixContext) {
         context.setState(OneState())
-        println(MessageUtil.printMatrixState(OneState().toString()))
+        println(MessageUtil.printState(OneState().toString()))
     }
 
     override fun turnRight(context: MatrixContext) {
         context.setState(ThreeState())
-        println(MessageUtil.printMatrixState(ThreeState().toString()))
+        println(MessageUtil.printState(ThreeState().toString()))
     }
 }
